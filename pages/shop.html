@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — VOLCANICO Fire Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-inner">
+    <div class="loader-logo">MENU</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-counter" id="loaderCounter">0</div>
+  </div>
+</div>
+
+<div class="custom-cursor" id="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="cursor-text">VIEW</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-left">
+    <a href="../index.html" class="nav-logo">VOLCANICO</a>
+    <span class="nav-tagline">Fire Kitchen · Mumbai</span>
+  </div>
+  <div class="nav-center" id="navMenu">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="shop.html" class="nav-link active">Menu</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"><span class="theme-icon">◐</span></button>
+    <button class="cart-trigger" id="cartTrigger">
+      <span>Cart</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-bg"></div>
+  <nav class="mm-nav">
+    <a href="../index.html" class="mm-link">Home</a>
+    <a href="shop.html" class="mm-link">Menu</a>
+    <a href="about.html" class="mm-link">About</a>
+    <a href="contact.html" class="mm-link">Contact</a>
+  </nav>
+  <div class="mm-footer">hello@VOLCANICO.in · +91 98765 43210</div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-media">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80" alt="Menu" class="ph-img" />
+    <div class="ph-overlay"></div>
+  </div>
+  <div class="ph-content">
+    <h1>THE MENU</h1>
+    <p>Fire-forged dishes from our open kitchen. All dishes are crafted daily with seasonal, locally-sourced ingredients.</p>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Starters</span><span class="tick-sep">✦</span>
+    <span>Mains</span><span class="tick-sep">✦</span>
+    <span>Desserts</span><span class="tick-sep">✦</span>
+    <span>Drinks</span><span class="tick-sep">✦</span>
+    <span>Seasonal</span><span class="tick-sep">✦</span>
+    <span>Starters</span><span class="tick-sep">✦</span>
+    <span>Mains</span><span class="tick-sep">✦</span>
+    <span>Desserts</span><span class="tick-sep">✦</span>
+    <span>Drinks</span><span class="tick-sep">✦</span>
+    <span>Seasonal</span><span class="tick-sep">✦</span>
+  </div>
+</div>
+
+<!-- SHOP SECTION -->
+<section class="shop-section">
+  <div class="shop-toolbar">
+    <div class="filter-pills">
+      <button class="filter-pill active" data-cat="all">All Dishes</button>
+      <button class="filter-pill" data-cat="starter">Starters</button>
+      <button class="filter-pill" data-cat="main">Mains</button>
+      <button class="filter-pill" data-cat="dessert">Desserts</button>
+      <button class="filter-pill" data-cat="drink">Drinks</button>
+    </div>
+    <select class="sort-select" id="sortSelect">
+      <option value="default">Sort: Featured</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="name">Name A–Z</option>
+    </select>
+  </div>
+
+  <div class="menu-grid" id="menuGrid">
+
+    <!-- STARTERS -->
+    <div class="menu-card reveal-item" data-cat="starter" data-price="480" data-name="Crater Bruschetta">
+      <div class="mc-img-wrap">
+        <img src="https://th.bing.com/th/id/OIP.HyyiWLi20ollT9rF57M1HAHaHa?w=173&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Bruschetta" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Starter</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Crater Bruschetta</h3>
+          <span class="mc-price">₹480</span>
+        </div>
+        <p>Artisanal bread, heirloom tomatoes, fresh basil, garlic, balsamic reduction, volcanic sea salt.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg</span>
+          <button class="add-to-cart" data-name="Crater Bruschetta" data-price="480">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="starter" data-price="620" data-name="Ash-Roasted Beet Salad">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=75" alt="Salad" class="mc-img" loading="lazy" />
+        <span class="mc-badge new">New</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Ash-Roasted Beet Salad</h3>
+          <span class="mc-price">₹620</span>
+        </div>
+        <p>Fire-roasted beets, whipped feta, toasted walnuts, micro greens, honey-citrus dressing.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg · GF</span>
+          <button class="add-to-cart" data-name="Ash-Roasted Beet Salad" data-price="620">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="starter" data-price="790" data-name="Smoked Lamb Chops">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=75" alt="Lamb Chops" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Chef's Pick</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Smoked Lamb Chops</h3>
+          <span class="mc-price">₹790</span>
+        </div>
+        <p>Mini lamb chops smoked over cherry wood, served with chimichurri and VOLCANICO-roasted peppers.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Non-Veg</span>
+          <button class="add-to-cart" data-name="Smoked Lamb Chops" data-price="790">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="starter" data-price="540" data-name="Charred Corn Fritters">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=75" alt="Fritters" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Starter</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Charred Corn Fritters</h3>
+          <span class="mc-price">₹540</span>
+        </div>
+        <p>Sweet corn fritters with smoked paprika aioli, jalapeño relish, and pickled onions.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg</span>
+          <button class="add-to-cart" data-name="Charred Corn Fritters" data-price="540">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAINS -->
+    <div class="menu-card reveal-item" data-cat="main" data-price="1890" data-name="Volcanic Lamb Rack">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=75" alt="Lamb Rack" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Signature</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Volcanic Lamb Rack</h3>
+          <span class="mc-price">₹1,890</span>
+        </div>
+        <p>Premium lamb rack over volcanic flame, saffron jus, roasted root vegetables, charred herb oil.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Non-Veg · GF</span>
+          <button class="add-to-cart" data-name="Volcanic Lamb Rack" data-price="1890">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="main" data-price="1240" data-name="Magma Mushroom Risotto">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=75" alt="Risotto" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Most Loved</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Magma Mushroom Risotto</h3>
+          <span class="mc-price">₹1,240</span>
+        </div>
+        <p>Arborio rice, wild mushroom medley, black truffle oil, aged parmesan, micro herbs.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg · GF</span>
+          <button class="add-to-cart" data-name="Magma Mushroom Risotto" data-price="1240">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="main" data-price="1560" data-name="Scorched Sea Bass">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=600&q=75" alt="Sea Bass" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Seasonal</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Scorched Sea Bass</h3>
+          <span class="mc-price">₹1,560</span>
+        </div>
+        <p>Crispy-skin Atlantic sea bass, lemon-caper butter, wilted spinach, crushed new potatoes.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Seafood · GF</span>
+          <button class="add-to-cart" data-name="Scorched Sea Bass" data-price="1560">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="main" data-price="1420" data-name="Lava Spiced Duck Breast">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=75" alt="Duck" class="mc-img" loading="lazy" />
+        <span class="mc-badge new">New</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Lava Spiced Duck Breast</h3>
+          <span class="mc-price">₹1,420</span>
+        </div>
+        <p>Duck breast with VOLCANICO spice crust, cherry reduction, caramelised endive, potato gratin.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Non-Veg</span>
+          <button class="add-to-cart" data-name="Lava Spiced Duck Breast" data-price="1420">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="main" data-price="1680" data-name="Ribeye Over Coals">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=75" alt="Ribeye" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Signature</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Ribeye Over Coals</h3>
+          <span class="mc-price">₹1,680</span>
+        </div>
+        <p>300g dry-aged ribeye cooked directly over hot coals, compound butter, hand-cut chips, béarnaise.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Non-Veg · GF</span>
+          <button class="add-to-cart" data-name="Ribeye Over Coals" data-price="1680">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-card reveal-item" data-cat="dessert" data-price="480" data-name="Lava Lava Cake">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=75" alt="Lava Cake" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Dessert</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Lava Lava Cake</h3>
+          <span class="mc-price">₹480</span>
+        </div>
+        <p>Warm dark chocolate cake, molten centre, vanilla bean ice cream, raspberry coulis, chocolate tuile.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg</span>
+          <button class="add-to-cart" data-name="Lava Lava Cake" data-price="480">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="dessert" data-price="420" data-name="Burnt Basque Cheesecake">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=600&q=75" alt="Cheesecake" class="mc-img" loading="lazy" />
+        <span class="mc-badge new">New</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Burnt Basque Cheesecake</h3>
+          <span class="mc-price">₹420</span>
+        </div>
+        <p>San Sebastián-style creamy cheesecake, flame-torched top, seasonal berry compote, candied citrus.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg</span>
+          <button class="add-to-cart" data-name="Burnt Basque Cheesecake" data-price="420">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="dessert" data-price="380" data-name="VOLCANICO Crème Brûlée">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=75" alt="Creme Brulee" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Dessert</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>VOLCANICO Crème Brûlée</h3>
+          <span class="mc-price">₹380</span>
+        </div>
+        <p>Classic vanilla crème brûlée with a perfectly caramelised sugar crust, fresh berries.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Veg · GF</span>
+          <button class="add-to-cart" data-name="VOLCANICO Crème Brûlée" data-price="380">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-card reveal-item" data-cat="drink" data-price="320" data-name="Smoky Mezcal Negroni">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=75" alt="Negroni" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Signature Cocktail</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Smoky Mezcal Negroni</h3>
+          <span class="mc-price">₹320</span>
+        </div>
+        <p>House-infused mezcal, sweet vermouth, Campari, charred orange twist. Our best seller.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Cocktail</span>
+          <button class="add-to-cart" data-name="Smoky Mezcal Negroni" data-price="320">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="drink" data-price="280" data-name="Charcoal Old Fashioned">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=75" alt="Old Fashioned" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Bar Favourite</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Charcoal Old Fashioned</h3>
+          <span class="mc-price">₹280</span>
+        </div>
+        <p>Activated charcoal-washed bourbon, demerara syrup, aromatic bitters, smoked cherry.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Cocktail</span>
+          <button class="add-to-cart" data-name="Charcoal Old Fashioned" data-price="280">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card reveal-item" data-cat="drink" data-price="220" data-name="Fire Cold Brew">
+      <div class="mc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=75" alt="Cold Brew" class="mc-img" loading="lazy" />
+        <span class="mc-badge">Non-Alcoholic</span>
+      </div>
+      <div class="mc-body">
+        <div class="mc-meta">
+          <h3>Fire Cold Brew</h3>
+          <span class="mc-price">₹220</span>
+        </div>
+        <p>Single-origin cold brew coffee infused with cinnamon and cayenne, served over volcanic salt ice.</p>
+        <div class="mc-footer">
+          <span class="mc-cat">Non-Alc · Vegan</span>
+          <button class="add-to-cart" data-name="Fire Cold Brew" data-price="220">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="ft-brand">
+      <a href="../index.html" class="footer-logo">VOLCANICO</a>
+      <p>Fire-forged flavours. Crafted with intention.</p>
+    </div>
+    <div class="ft-links">
+      <h4>Navigate</h4>
+      <a href="../index.html">Home</a>
+      <a href="shop.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="ft-contact">
+      <h4>Find Us</h4>
+      <p>12 Flameway Lane, Bandra West<br />Mumbai 400050</p>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="mailto:hello@VOLCANICO.in">hello@VOLCANICO.in</a>
+    </div>
+    <div class="ft-social">
+      <h4>Follow</h4>
+      <a href="#">Instagram ↗</a>
+      <a href="#">Facebook ↗</a>
+      <a href="#">Twitter ↗</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 VOLCANICO Fire Kitchen. All rights reserved.</span>
+    <span>Mumbai, India</span>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-head">
+    <h3>Your Order</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-body" id="cartItems">
+    <p class="cart-empty">Your cart is empty.<br/>Add something from our menu.</p>
+  </div>
+  <div class="cart-foot" id="cartFooter" style="display:none">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span class="cart-total" id="cartTotal">₹0</span>
+    </div>
+    <button class="cart-checkout" onclick="placeOrder()">Place Order</button>
+  </div>
+</aside>
+
+<script src="../main.js"></script>
+</body>
+</html>

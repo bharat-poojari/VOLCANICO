@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — VOLCANICO Fire Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<div class="page-loader" id="pageLoader">
+  <div class="loader-inner">
+    <div class="loader-logo">CONTACT</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-counter" id="loaderCounter">0</div>
+  </div>
+</div>
+
+<div class="custom-cursor" id="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="cursor-text">VIEW</div>
+</div>
+
+<nav class="nav" id="nav">
+  <div class="nav-left">
+    <a href="../index.html" class="nav-logo">VOLCANICO</a>
+    <span class="nav-tagline">Fire Kitchen · Mumbai</span>
+  </div>
+  <div class="nav-center">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="shop.html" class="nav-link">Menu</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"><span class="theme-icon">◐</span></button>
+    <button class="cart-trigger" id="cartTrigger">
+      <span>Cart</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-bg"></div>
+  <nav class="mm-nav">
+    <a href="../index.html" class="mm-link">Home</a>
+    <a href="shop.html" class="mm-link">Menu</a>
+    <a href="about.html" class="mm-link">About</a>
+    <a href="contact.html" class="mm-link">Contact</a>
+  </nav>
+  <div class="mm-footer">hello@VOLCANICO.in · +91 98765 43210</div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-media">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80" alt="Contact" class="ph-img" />
+    <div class="ph-overlay"></div>
+  </div>
+  <div class="ph-content">
+    <h1>REACH US</h1>
+    <p>Book a table, enquire about private events, or just say hello. We'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section reveal-section">
+  <div class="contact-grid">
+    <!-- Left: Info -->
+    <div class="cg-left">
+      <h2>Let's Start a<br /><em>Conversation</em></h2>
+      <p>Whether you're planning a special dinner, corporate event, birthday celebration, or just want to make a reservation — our team is ready to help you craft an unforgettable experience.</p>
+      <div class="contact-details">
+        <div class="cd-item">
+          <div class="cd-label">Address</div>
+          <div class="cd-value">12 Flameway Lane, Bandra West<br />Mumbai, Maharashtra 400050</div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-label">Phone</div>
+          <div class="cd-value"><a href="tel:+919876543210">+91 98765 43210</a></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-label">Email</div>
+          <div class="cd-value"><a href="mailto:hello@VOLCANICO.in">hello@VOLCANICO.in</a></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-label">Reservations</div>
+          <div class="cd-value"><a href="mailto:reservations@VOLCANICO.in">reservations@VOLCANICO.in</a></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-label">Private Events</div>
+          <div class="cd-value"><a href="mailto:events@VOLCANICO.in">events@VOLCANICO.in</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="cg-right">
+      <form class="contact-form" onsubmit="submitForm(event)" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="first_name" placeholder="Aryan" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="last_name" placeholder="Kapoor" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="hello@you.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic...</option>
+            <option value="reservation">Table Reservation</option>
+            <option value="private">Private Event Enquiry</option>
+            <option value="delivery">Online Order Help</option>
+            <option value="feedback">Feedback / Review</option>
+            <option value="press">Press / Media</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests">
+              <option value="">Select...</option>
+              <option>1–2</option>
+              <option>3–4</option>
+              <option>5–8</option>
+              <option>9–12</option>
+              <option>13–20</option>
+              <option>20+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your occasion, dietary requirements, or any special requests..."></textarea>
+        </div>
+        <div class="form-group form-submit">
+          <button type="submit">Send Message</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          ✓ Message received! We'll get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section class="hours-section reveal-section">
+  <div class="hours-inner">
+    <div>
+      <span class="sec-tag">— Opening Hours</span>
+      <h2 class="sec-heading">When We're <em>Open</em></h2>
+      <p>Walk-ins welcome during all hours. Reservations recommended for dinner service, especially Thursday–Sunday.</p>
+    </div>
+    <div>
+      <div class="hours-table">
+        <div class="hours-row">
+          <span class="hours-day">Monday – Tuesday</span>
+          <span class="hours-time">5:00 PM – 11:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Wednesday</span>
+          <span class="hours-time">Closed</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Thursday – Friday</span>
+          <span class="hours-time">11:00 AM – 11:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Saturday</span>
+          <span class="hours-time">10:00 AM – 12:00 AM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">10:00 AM – 10:00 PM</span>
+        </div>
+      </div>
+      <div class="hours-note">
+        Kitchen closes 45 minutes before closing time. Last orders for dessert taken 30 minutes before close. Private dining available for groups of 12–30 on any day with advance booking.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+  <div class="map-embed">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.886929754!2d72.83081!3d19.05974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c88cbf0d6e6f%3A0x6a0b1f5a9e3cbe45!2sBandra+West%2C+Mumbai!5e0!3m2!1sen!2sin!4v1700000000000"
+      width="100%"
+      height="480"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section reveal-section">
+  <div class="faq-header">
+    <span class="sec-tag">— FAQs</span>
+    <h2 class="sec-heading">Frequently Asked <em>Questions</em></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">
+        Do you take walk-in guests? <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Yes, we welcome walk-ins during all opening hours. However, for dinner service (especially Thursday to Sunday), we strongly recommend reservations as we tend to be fully booked 2–3 days in advance.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        Can you accommodate dietary requirements? <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Absolutely. We cater for vegetarian, vegan, gluten-free, nut-free, and most other dietary requirements. Please let us know when booking or placing an order and our kitchen team will work with you to ensure an exceptional experience.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        Do you offer private dining or events? <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Yes! We have a dedicated private dining room for groups of 12–30, available any day with advance booking. We also host full restaurant buyouts for larger events. Email events@VOLCANICO.in for packages and pricing.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        What is your cancellation policy? <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p>We request 24 hours notice for cancellations of tables of up to 6 people. For groups of 7 or more, we ask for 48 hours notice. Late cancellations may result in a per-person charge. Full no-shows are charged at ₹500 per person.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        How do online orders and delivery work? <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p>You can order directly from our website and we deliver across Mumbai within a 15km radius. Delivery takes approximately 45–60 minutes. Orders above ₹1,500 qualify for free delivery. We also offer express 30-minute pickup for orders placed directly via phone.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">
+        Is parking available? <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p>We have valet parking available Thursday–Sunday from 6PM. Street parking is available on adjacent roads on other days. We're also a 7-minute walk from Bandra Station Western Line, and well-connected by auto and taxi services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="ft-brand">
+      <a href="../index.html" class="footer-logo">VOLCANICO</a>
+      <p>Fire-forged flavours. Crafted with intention.</p>
+    </div>
+    <div class="ft-links">
+      <h4>Navigate</h4>
+      <a href="../index.html">Home</a>
+      <a href="shop.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="ft-contact">
+      <h4>Find Us</h4>
+      <p>12 Flameway Lane, Bandra West<br />Mumbai 400050</p>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="mailto:hello@VOLCANICO.in">hello@VOLCANICO.in</a>
+    </div>
+    <div class="ft-social">
+      <h4>Follow</h4>
+      <a href="#">Instagram ↗</a>
+      <a href="#">Facebook ↗</a>
+      <a href="#">Twitter ↗</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 VOLCANICO Fire Kitchen. All rights reserved.</span>
+    <span>Mumbai, India</span>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-head"><h3>Your Order</h3><button class="cart-close" id="cartClose">✕</button></div>
+  <div class="cart-body" id="cartItems"><p class="cart-empty">Your cart is empty.</p></div>
+  <div class="cart-foot" id="cartFooter" style="display:none">
+    <div class="cart-total-row"><span>Total</span><span class="cart-total" id="cartTotal">₹0</span></div>
+    <button class="cart-checkout" onclick="placeOrder()">Place Order</button>
+  </div>
+</aside>
+
+<script src="../main.js"></script>
+</body>
+</html>
