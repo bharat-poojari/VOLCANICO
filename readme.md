@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Volcanico Fire Kitchen](https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/assets/logo.png)
+  ![Volcanico Fire Kitchen](https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/screenshot/s1.png)
 
   ### 🔥 WHERE FIRE MEETS ART - Mumbai's Most Audacious Fire-Kitchen
 
@@ -24,6 +24,15 @@
   </p>
 </div>
 
+
+## 📸 Screenshots
+<div style="white-space: nowrap; overflow-x: auto; padding: 10px 0;">
+  <img src="https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/screenshot/s1.png" height="200" style="display:inline-block; margin-right:10px;">
+  <img src="https://raw.githubusercontent.com/bharat-poojari/PrimeNews/main/src/screenshots/s2.png" height="200" style="display:inline-block; margin-right:10px;">
+  <img src="https://raw.githubusercontent.com/bharat-poojari/PrimeNews/main/src/screenshots/s3.png" height="200" style="display:inline-block; margin-right:10px;">
+  <img src="https://raw.githubusercontent.com/bharat-poojari/PrimeNews/main/src/screenshots/s4.png" height="200" style="display:inline-block; margin-right:10px;">
+  <img src="https://raw.githubusercontent.com/bharat-poojari/PrimeNews/main/src/screenshots/s5.png" height="200" style="display:inline-block; margin-right:10px;">
+</div>
 ---
 
 ## 📋 Table of Contents
