@@ -177,16 +177,16 @@ const cartFeatures = {
     <td><strong>🍖 Signature Dishes</strong></td>
   </tr>
   <tr>
-    <td><img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=WHERE+FIRE+MEETS+ART" alt="Hero"/></td>
-    <td><img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Volcanic+Lamb+Rack" alt="Dishes"/></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/screenshot/s1.png" alt="Hero"/></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/screenshot/s3.png" alt="Dishes"/></td>
   </tr>
   <tr>
-    <td><strong>📜 Philosophy Section</strong></td>
-    <td><strong>⭐ Guest Reviews</strong></td>
+    <td><strong>📜 About Section</strong></td>
+    <td><strong>⭐ Contact</strong></td>
   </tr>
   <tr>
-    <td><img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Controlled+Chaos" alt="Philosophy"/></td>
-    <td><img src="https://via.placeholder.com/400x250/1a1a1a/ffffff?text=5+Star+Reviews" alt="Reviews"/></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/screenshot/s4.png" alt="Philosophy"/></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/VOLCANICO/main/screenshot/s5.png" alt="Reviews"/></td>
   </tr>
 </table>
 
